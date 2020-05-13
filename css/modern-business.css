@@ -1,0 +1,66 @@
+/*!
+ * Start Bootstrap - Modern Business (https://startbootstrap.com/template-overviews/modern-business)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
+ */
+body {
+  padding-top: 56px;
+}
+
+.carousel-item {
+  height: 65vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+/* .navbar{
+  background-image: linear-gradient(to right, #844E06, #844E06);
+} */
+
+.slide1{
+  background-image: url('../assets/img/almuerzo3.png');
+}
+
+@media only screen and (max-width: 800px) {
+  .slide1 {
+    background-image:none;
+    background-color: lightblue;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .slide1 {
+    background-image:url('../assets/img/almuerzo3.png');
+   
+  }
+}
+
+/* whatsapp */
+.float{
+	position:fixed;
+	width:40px;
+	height:40px;
+	bottom:70px;
+	right:10px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+  text-align:center;
+  margin: auto;
+  font-size:27px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+  
+}
+
+.my-float{
+	margin: auto;
+}
