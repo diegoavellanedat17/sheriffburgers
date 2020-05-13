@@ -1,3 +1,8 @@
+//Importamos el Archivo tipo JSON 
+var menu=JSON.parse(menu)
+menu_diario=menu.menu
+console.log(menu_diario.d14052020)
+
 console.log('here')
 var dias = ["Lunes", "Martes", "Miercoles","Jueves","Viernes","Sábado","Domingo"];
 var meses=["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"]
@@ -57,6 +62,22 @@ if(today_hora >= 10){
 
     $("#cuenta-atras").append(`Puedes hacer tu pedido para mañana hasta las 10 AM`)
     document.getElementById("dia").innerHTML = dias[tomorrow_day_week] +" " + tomorrow_d + " de " + meses[tomorrow_m-1] + " de " + tomorrow_y;
+
+    //Formatear los números para encontrar el menú
+
+    // escogemos el menu de mañana
+    var tomorrow_json=formDateToSearch(tomorrow_y,tomorrow_m,tomorrow_d)
+
+    console.log(menu_diario[tomorrow_json])
+    // imprimir el ménu diario
+    Opcion1titulo=menu_diario[tomorrow_json]['opcion1']['titulo']
+    Opcion2titulo=menu_diario[tomorrow_json]['opcion2']['titulo']
+    Opcion1ingredientes=menu_diario[tomorrow_json]['opcion1']['ingredientes']
+    Opcion2ingredientes=menu_diario[tomorrow_json]['opcion2']['ingredientes']
+   
+    imprimirMenúDiario(Opcion1titulo,Opcion2titulo,Opcion1ingredientes,Opcion2ingredientes)
+
+
 }
 
 else{
@@ -87,8 +108,23 @@ else{
       
 }, 1000);
 
-    $("#cuenta-atras").append(`Aun puedes hacer tu pedido para hoy hasta las 10 AM`)
+    $("#cuenta-atras").append(`Aún puedes hacer tu pedido para hoy hasta las 10 AM`)
     document.getElementById("dia").innerHTML = dias[today_day_week] +" " + today_d + " de " + meses[today_m-1] + " de " + today_y;
+
+    // escogemos el menu de hoy
+
+
+    var today_json=formDateToSearch(today_y,today_m,today_d)
+
+    console.log(menu_diario[today_json])
+    // imprimir el ménu diario
+    Opcion1titulo=menu_diario[today_json]['opcion1']['titulo']
+    Opcion2titulo=menu_diario[today_json]['opcion2']['titulo']
+    Opcion1ingredientes=menu_diario[today_json]['opcion1']['ingredientes']
+    Opcion2ingredientes=menu_diario[today_json]['opcion2']['ingredientes']
+   
+    imprimirMenúDiario(Opcion1titulo,Opcion2titulo,Opcion1ingredientes,Opcion2ingredientes)
+
 }
 
 
@@ -121,3 +157,43 @@ $(function() {
   });
 
 
+function imprimirMenúDiario(tituloOp1,tituloOp2,ingredientesOp1,ingredientesOp2){
+
+    $('#op1titulo').empty()
+    $('#op2titulo').empty()
+    $('#ingredientesOp1').empty()
+    $('#ingredientesOp2').empty()
+    $('#op1titulo').append(tituloOp1)
+    $('#op2titulo').append(tituloOp2)
+
+
+    ingredientesOp1.forEach(function(item){
+        $('#ingredientesOp1').append(`<li class="list-group-item">${item}</li>`)
+    })
+    ingredientesOp2.forEach(function(item){
+        $('#ingredientesOp2').append(`<li class="list-group-item">${item}</li>`)
+    })
+
+}
+
+function formDateToSearch(date_year,date_month,date_day){
+    date_year.toString()
+    if (date_month<10){
+        //agregar un cero
+        date_month.toString()
+        date_month= "0"+date_month
+    }
+    else{
+        date_month.toString()
+    }
+
+    if (date_day<10){
+        //agregar un cero
+        date_day.toString()
+        date_day= "0"+date_day
+    }
+    else{
+        date_day.toString()
+    }
+    return(`d${date_day}${date_month}${date_year}`)
+}

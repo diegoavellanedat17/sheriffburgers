@@ -26,19 +26,19 @@ body {
 } */
 
 .slide1{
-  background-image: url('../assets/img/almuerzo3.png');
+  background-image: url('../assets/img/almuerzo.png');
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
   .slide1 {
-    background-image:none;
+    background-image:url('../assets/img/almuerzoIpap.png');
     background-color: lightblue;
   }
 }
 
 @media only screen and (max-width: 400px) {
   .slide1 {
-    background-image:url('../assets/img/almuerzo3.png');
+    background-image:url('../assets/img/almuerzocelular.png');
    
   }
 }
