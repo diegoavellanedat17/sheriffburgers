@@ -135,8 +135,8 @@ $(function() {
     $("#addMore").click(function(e) {
       e.preventDefault();
       numero_almuerzos++;
-      $("#almuerzos").append(`<div id="almuerzos">
-      <div class="form-group">
+      $("#almuerzos").append(`
+      <div class="form-group" id="opcionAL${numero_almuerzos}">
         <label for="opcion${numero_almuerzos}">Opción de Almuerzo ${numero_almuerzos}</label>
         <select class="form-control" id="opcion${numero_almuerzos}" name="opcion${numero_almuerzos}">
           <option>1</option>
@@ -144,7 +144,7 @@ $(function() {
         </select>
       </div>
 
-      <div class="form-group">
+      <div class="form-group" id="opcionTM${numero_almuerzos}">
         <label for="tamano${numero_almuerzos}">Tamaño Almuerzo ${numero_almuerzos}</label>
         <select class="form-control" id="tamano${numero_almuerzos}" name="tamano${numero_almuerzos}">
           <option>32 OZ</option>
@@ -153,8 +153,43 @@ $(function() {
       </div>`);
       console.log(numero_almuerzos)
 
+      if(numero_almuerzos>1){
+        $("#quitar").removeClass("disabled")
+    }
+
     });
+
+
+
   });
+
+
+
+
+  $(function() {
+      console.log(numero_almuerzos)
+    $("#quitar").click(function(e) {
+      e.preventDefault();
+
+      if(numero_almuerzos>1){
+        
+        console.log(numero_almuerzos)
+        $(`#opcionAL${numero_almuerzos}`).remove()
+        $(`#opcionTM${numero_almuerzos}`).remove()
+        numero_almuerzos--;
+        
+      if(numero_almuerzos===1){
+        $("#quitar").addClass("disabled")
+      }
+      }
+
+
+
+
+
+
+     });
+    });
 
 
 function imprimirMenúDiario(tituloOp1,tituloOp2,ingredientesOp1,ingredientesOp2){
