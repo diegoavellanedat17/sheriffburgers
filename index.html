@@ -101,7 +101,16 @@
 
       <div class="col-12 mt-3 mb-2">
         Tenemos dos opciones de almuerzo diarias para ti, recuerda que el pedido lo puedes hacer máximo hasta las 10:00 AM del día que deseas tu almuerzo.
-        <h4 class="mt-3" id="cuenta-atras" style="color: green;"></h4>
+        <div class="row">
+        <div class="col-12 col-md-6">
+          <h4 class="mt-3" id="cuenta-atras" style="color: green;"></h4>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <h4 class="mt-3" id="demo" style="color: red;"></h4>
+        </div>
+      </div>
+        
         <hr>
         <h4>Menú del <span id="dia">día</span></h4>
       </div>
@@ -145,30 +154,31 @@
       <div class="col-12">
         <hr>
         <h4>Llena tu orden acá</h4>
-        <form id="formulario" method="POST" action="https://script.google.com/macros/s/AKfycbzjO4XCp0IDFokM4XjeHgL03nsKjWC749d7O64/exec">
+        <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+        <form id="formulario" method="POST" action="https://script.google.com/macros/s/AKfycbzjO4XCp0IDFokM4XjeHgL03nsKjWC749d7O64/exec" onsubmit="return alert('Tu pedido ha sido enviado, pronto nos contactaremos');" target="dummyframe">
           <div class="form-group">
-            <input type="text" class="form-control" id="name" name="nombre" placeholder="Nombre">
+            <input type="text" class="form-control" id="name" name="nombre" placeholder="Nombre" required>
           </div>
           <div class="form-group">
-            <input type="phone" class="form-control" name="celular" placeholder="Celular">
+            <input type="tel" class="form-control" id="celular" name="celular" placeholder="Celular" required>
           </div>
 
           <div class="form-group">
-            <input type="text" class="form-control" name="direccion" placeholder="Dirección de entrega">
+            <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Dirección de entrega" required>
           </div>
 
           <div id="almuerzos">
           <div class="form-group">
-            <label for="exampleFormControlSelect1">Opción de Almuerzo</label>
-            <select class="form-control" name="opcion">
+            <label for="opcion1">Opción de Almuerzo</label>
+            <select class="form-control" name="opcion1" id="opcion1" >
               <option>1</option>
               <option>2</option>
             </select>
           </div>
 
           <div class="form-group">
-            <label for="exampleFormControlSelect1">Tamaño</label>
-            <select class="form-control" name="tamano">
+            <label for="tamano1">Tamaño</label>
+            <select class="form-control" name="tamano1" id="tamano1">
               <option>32 OZ</option>
               <option>24 OZ</option>
             </select>
@@ -180,16 +190,16 @@
   
          
           <div class="form-group">
-            <label for="exampleFormControlSelect1">Tipo de Pago</label>
-            <select class="form-control" name="pago">
+            <label for="pago">Tipo de Pago</label>
+            <select class="form-control" name="pago" id="pago">
               <option>Efectivo</option>
               <option>Datáfono</option>
             </select>
           </div>
           
           <div class="form-group">
-            <label for="exampleFormControlTextarea1">Notas Adicionales</label>
-            <textarea class="form-control" name="notas" rows="3"></textarea>
+            <label for="notas">Notas Adicionales</label>
+            <textarea class="form-control" name="notas" id="notas" rows="3"></textarea>
           </div>
           <button type="submit" class="btn btn-success">Enviar Pedido</button>
         </form>
