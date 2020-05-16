@@ -4,7 +4,7 @@ menu_diario=menu.menu
 
 
 console.log('here')
-var dias = ["Lunes", "Martes", "Miercoles","Jueves","Viernes","Sábado","Domingo"];
+var dias = ["Domingo","Lunes", "Martes", "Miercoles","Jueves","Viernes","Sábado"];
 var meses=["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"]
 
 
@@ -12,7 +12,7 @@ today =  new Date();
 today_y = today.getFullYear();
 today_m = today.getMonth() + 1;
 today_d = today.getDate();
-today_day_week=today.getDay()-1
+today_day_week=today.getDay()
 today_hora= today.getHours()
 console.log(today_hora)
 
@@ -24,7 +24,7 @@ tomorrow.setDate(tomorrow.getDate()+1)
 tomorrow_y = tomorrow.getFullYear();
 tomorrow_m = tomorrow.getMonth() + 1;
 tomorrow_d = tomorrow.getDate();
-tomorrow_day_week=tomorrow.getDay()-1
+tomorrow_day_week=tomorrow.getDay()
 
 var numero_almuerzos=1;
 
@@ -61,6 +61,7 @@ if(today_hora >= 10){
 //acaba
 
     $("#cuenta-atras").append(`Puedes hacer tu pedido para mañana hasta las 10 AM`)
+    console.log(tomorrow_day_week)
     document.getElementById("dia").innerHTML = dias[tomorrow_day_week] +" " + tomorrow_d + " de " + meses[tomorrow_m-1] + " de " + tomorrow_y;
 
     //Formatear los números para encontrar el menú
