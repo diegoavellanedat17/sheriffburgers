@@ -1,7 +1,7 @@
 //Importamos el Archivo tipo JSON 
 var menu=JSON.parse(menu)
 menu_diario=menu.menu
-console.log(menu_diario.d14052020)
+
 
 console.log('here')
 var dias = ["Lunes", "Martes", "Miercoles","Jueves","Viernes","Sábado","Domingo"];
@@ -70,12 +70,21 @@ if(today_hora >= 10){
 
     console.log(menu_diario[tomorrow_json])
     // imprimir el ménu diario
-    Opcion1titulo=menu_diario[tomorrow_json]['opcion1']['titulo']
-    Opcion2titulo=menu_diario[tomorrow_json]['opcion2']['titulo']
-    Opcion1ingredientes=menu_diario[tomorrow_json]['opcion1']['ingredientes']
-    Opcion2ingredientes=menu_diario[tomorrow_json]['opcion2']['ingredientes']
-   
-    imprimirMenúDiario(Opcion1titulo,Opcion2titulo,Opcion1ingredientes,Opcion2ingredientes)
+    try {
+
+      Opcion1titulo=menu_diario[tomorrow_json]['opcion1']['titulo']
+      Opcion2titulo=menu_diario[tomorrow_json]['opcion2']['titulo']
+      Opcion1ingredientes=menu_diario[tomorrow_json]['opcion1']['ingredientes']
+      Opcion2ingredientes=menu_diario[tomorrow_json]['opcion2']['ingredientes']
+     
+      imprimirMenúDiario(Opcion1titulo,Opcion2titulo,Opcion1ingredientes,Opcion2ingredientes)
+      
+    } catch (error) {
+      imprimirNoHayPlatos();
+      console.error(error);
+
+    }
+
 
 
 }
@@ -231,4 +240,15 @@ function formDateToSearch(date_year,date_month,date_day){
         date_day.toString()
     }
     return(`d${date_day}${date_month}${date_year}`)
+}
+
+function imprimirNoHayPlatos(tituloOp1,tituloOp2,ingredientesOp1,ingredientesOp2){
+
+  $('.opcion_menu1').empty()
+  $('.opcion_menu2').empty()
+  $('#cuenta-atras').empty()
+  $('#demo').remove()
+  $('.opcion_menu1').append('<h4 class="mt-3"  style="color: green;">No tenemos servicio para este día, pronto notificaremos el nuevo Menú</h4>')
+
+
 }
