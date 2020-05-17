@@ -123,6 +123,116 @@ var menu= `{
           "Papas francesa"
         ]
       }
+    },
+    "d18052020": {
+      "opcion1": {
+        "titulo": "Pollo a la plancha",
+        "ingredientes": [
+          "Pollo a la plancha",
+          "Arroz amarillo",
+          "Zanahoria",
+          "Arveja",
+          "Patacones"
+        ]
+      },
+      "opcion2": {
+        "titulo": "Cerdo a la plancha",
+        "ingredientes": [
+          "Cerdo a la plancha",
+          "Arroz amarillo",
+          "Zanahoria",
+          "Arveja",
+          "Patacones"
+        ]
+      }
+    },
+    "d19052020": {
+      "opcion1": {
+        "titulo": "Carne a la jardinera",
+        "ingredientes": [
+          "Carne a la jardinera",
+          "Arroz de coco blanco",
+          "Zanahoria",
+          "Habichuela",
+          "Arvejas",
+          "Cortes de papa"
+        ]
+      },
+      "opcion2": {
+        "titulo": "Pollo guisado",
+        "ingredientes": [
+          "Pollo guisado",
+          "Arroz de coco blanco",
+          "Zanahoria",
+          "Habichuela",
+          "Arvejas",
+          "Cortes de papa"
+        ]
+      }
+    },
+    "d20052020": {
+      "opcion1": {
+        "titulo": "Carne molida",
+        "ingredientes": [
+          "Carne molida",
+          "Arroz de cebollín",
+          "Aguacate",
+          "Tomates Cherry",
+          "Papas fosforito"
+        ]
+      },
+      "opcion2": {
+        "titulo": "Pollo Broaster",
+        "ingredientes": [
+          "Pollo Broaster",
+          "Arroz de cebollín",
+          "Aguacate",
+          "Tomates Cherry",
+          "Papas fosforito"
+        ]
+      }
+    },
+    "d21052020": {
+      "opcion1": {
+        "titulo": "Pechuga apanada",
+        "ingredientes": [
+          "Pechuga apanada",
+          "Arroz de fideo",
+          "Ensalada de mango",
+          "Puré de papa"
+        ]
+      },
+      "opcion2": {
+        "titulo": "Filete de pescado apanado",
+        "ingredientes": [
+          "Filete de pescado apanado",
+          "Arroz de fideo",
+          "Ensalada de mango",
+          "Puré de papa"
+        ]
+      }
+    },
+    "d22052020": {
+      "opcion1": {
+        "titulo": "Pollo azucarado",
+        "ingredientes": [
+          "Pollo azucarado",
+          "Arroz blanco",
+          "Frijoles",
+          "Patacones",
+          "Verduras en salsa de soya"
+        ]
+      },
+      "opcion2": {
+        "titulo": "Pierna de cerdo a la plancha",
+        "ingredientes": [
+          "Pierna de cerdo a la plancha",
+          "Arroz blanco",
+          "Frijoles",
+          "Patacones",
+          "Verduras en salsa de soya"
+        ]
+      }
     }
   }
 }`;
