@@ -124,25 +124,25 @@ var menu= `{
         ]
       }
     },
-    "d18052020": {
+    "d28052020": {
       "opcion1": {
-        "titulo": "Pollo a la plancha",
+        "titulo": "Carne con verduras",
         "ingredientes": [
-          "Pollo a la plancha",
-          "Arroz amarillo",
-          "Zanahoria",
-          "Arveja",
-          "Patacones"
+          "Carne Molida",
+          "Arroz de cebollín",
+          "Aguacate",
+          "Tomates Cherry",
+          "Papas fosforito"
         ]
       },
       "opcion2": {
-        "titulo": "Cerdo a la plancha",
+        "titulo": "Pollo Broaster,",
         "ingredientes": [
-          "Cerdo a la plancha",
-          "Arroz amarillo",
-          "Zanahoria",
-          "Arveja",
-          "Patacones"
+          "Pollo Broaster,",
+          "Arroz de cebollín",
+          "Aguacate",
+          "Tomates Cherry",
+          "Papas fosforito"
         ]
       }
     },
