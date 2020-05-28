@@ -124,7 +124,7 @@ var menu= `{
         ]
       }
     },
-    "d28052020": {
+    "d29052020": {
       "opcion1": {
         "titulo": "Carne con verduras",
         "ingredientes": [
