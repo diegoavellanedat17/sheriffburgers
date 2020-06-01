@@ -124,49 +124,26 @@ var menu= `{
         ]
       }
     },
-    "d29052020": {
+    "d02062020": {
       "opcion1": {
-        "titulo": "Carne con verduras",
+        "titulo": "Julianas de Pollo",
         "ingredientes": [
-          "Carne Molida",
-          "Arroz de cebollín",
-          "Aguacate",
-          "Tomates Cherry",
-          "Papas fosforito"
-        ]
+          "Pollo en cortes de Juliana",
+          "Lentejas españolas",
+          "Arepas fritas",
+          "Arroz con perejíl",
+          "Vegetales salteados" 
+          ]
+        
       },
       "opcion2": {
-        "titulo": "Pollo Broaster,",
+        "titulo": "Carne desmechada",
         "ingredientes": [
-          "Pollo Broaster,",
-          "Arroz de cebollín",
-          "Aguacate",
-          "Tomates Cherry",
-          "Papas fosforito"
-        ]
-      }
-    },
-    "d19052020": {
-      "opcion1": {
-        "titulo": "Carne a la jardinera",
-        "ingredientes": [
-          "Carne a la jardinera",
-          "Arroz de coco blanco",
-          "Zanahoria",
-          "Habichuela",
-          "Arvejas",
-          "Cortes de papa"
-        ]
-      },
-      "opcion2": {
-        "titulo": "Pollo guisado",
-        "ingredientes": [
-          "Pollo guisado",
-          "Arroz de coco blanco",
-          "Zanahoria",
-          "Habichuela",
-          "Arvejas",
-          "Cortes de papa"
+          "Carne desmechada",
+          "Lentejas españolas",
+          "Arepas fritas",
+          "Arroz con perejíl",
+          "Vegetales salteados"
         ]
       }
     },
