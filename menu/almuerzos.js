@@ -99,7 +99,7 @@ var menu= `{
         ]
       }
     },
-    "d16052020": {
+    "d03062020": {
       "opcion1": {
         "titulo": "Albondigas en salsa Campesina",
         "ingredientes": [
