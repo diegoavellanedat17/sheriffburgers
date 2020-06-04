@@ -69,3 +69,38 @@ body {
   font-family: 'Montserrat', sans-serif;
   
 }
+
+.card-body{
+  background-image: url("../assets/img/card-background.png");
+  background-color: lightblue;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.list-group-item{
+  background-color: rgba(255, 255, 255, 0.7);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+}
+#op1titulo{
+  background-color: rgba(0, 0, 0, 0.5);
+  font-weight: bolder;
+  color:white;
+}
+
+#op2titulo{
+  background-color: rgba(0, 0, 0, 0.5);
+  font-weight: bolder;
+  color:white;
+}
+
+.card-text{
+  background-color: rgba(0, 0, 0, 0.5);
+  font-weight: bolder;
+  color:white;
+}
+
+.card-header{
+  background-color: rgba(0, 0, 0, 0.5);
+  font-weight: bolder;
+  color:white;
+}
