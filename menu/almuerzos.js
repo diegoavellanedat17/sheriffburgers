@@ -77,7 +77,7 @@ var menu= `{
         ]
       }
     },
-    "d15052020": {
+    "d04062020": {
       "opcion1": {
         "titulo": "Pollo en salsa Miel Mostaza",
         "ingredientes": [
