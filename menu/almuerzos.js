@@ -77,25 +77,28 @@ var menu= `{
         ]
       }
     },
-    "d04062020": {
+    "d10062020": {
       "opcion1": {
-        "titulo": "Pollo en salsa Miel Mostaza",
+        "titulo": "Carne en bistec",
         "ingredientes": [
-          "Pollo en salsa Miel Mostaza",
-          "Monedas de plátano",
+          "Carne de Res en Bistec",
           "Arvejas",
+          "Tomate",
           "Zanahoria",
-          "Arroz con Coca Cola"
+          "Plátano maduro con bocadillo y queso",
+          "Arroz Blanco"
         ]
       },
       "opcion2": {
-        "titulo": "Pierna de Cerdo",
+        "titulo": "Pechuga gratinada",
         "ingredientes": [
-          "Pierna de Cerdo BBQ",
-          "Monedas de plátano",
+          "Pechuga gratinada",
           "Arvejas",
+          "Tomate",
           "Zanahoria",
-          "Arroz con Coca Cola"
+          "Plátano maduro con bocadillo y queso",
+          "Arroz Blanco"
+   
         ]
       }
     },
