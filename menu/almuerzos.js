@@ -150,25 +150,27 @@ var menu= `{
         ]
       }
     },
-    "d20052020": {
+    "d12062020": {
       "opcion1": {
-        "titulo": "Carne molida",
+        "titulo": "Pollo mexicano",
         "ingredientes": [
-          "Carne molida",
-          "Arroz de cebollín",
-          "Aguacate",
-          "Tomates Cherry",
-          "Papas fosforito"
+          "Pollo",
+          "Arroz blanco",
+          "frijoles refritos",
+          "Maíz",
+          "Guacamole",
+          "Pico de Gallo"
         ]
       },
       "opcion2": {
-        "titulo": "Pollo Broaster",
+        "titulo": "Carne de res mexicana",
         "ingredientes": [
-          "Pollo Broaster",
-          "Arroz de cebollín",
-          "Aguacate",
-          "Tomates Cherry",
-          "Papas fosforito"
+          "Carne de res",
+          "Arroz blanco",
+          "frijoles refritos",
+          "Maíz",
+          "Guacamole",
+          "Pico de Gallo"
         ]
       }
     },
