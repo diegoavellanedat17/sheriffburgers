@@ -213,10 +213,10 @@ function imprimirMenúDiario(tituloOp1,tituloOp2,ingredientesOp1,ingredientesOp2
 
 
     ingredientesOp1.forEach(function(item){
-        $('#ingredientesOp1').append(`<li class="list-group-item">${item}</li>`)
+        $('#ingredientesOp1').append(`<li class="list-group-item text-muted">${item}</li>`)
     })
     ingredientesOp2.forEach(function(item){
-        $('#ingredientesOp2').append(`<li class="list-group-item">${item}</li>`)
+        $('#ingredientesOp2').append(`<li class="list-group-item text-muted">${item}</li>`)
     })
 
 }

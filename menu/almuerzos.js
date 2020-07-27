@@ -34,100 +34,83 @@
 
 var menu= `{
   "menu": {
-    "d13052020": {
+    "d27072020": {
       "opcion1": {
-        "titulo": "Pollo en salsa de champiñon",
+        "titulo": "Carne guisada con habichuela y zanahoria",
         "ingredientes": [
-          "pechuga",
-          "arroz",
-          "maiz",
-          "queso"
+          "Arroz con cilantro",
+          "Ensalada de lechuga tomate cebolla  y vinagreta ",
+          "Pure de papa"
         ]
       },
       "opcion2": {
-        "titulo": "Carne a la plancha",
+        "titulo": "Cerdo a la plancha",
         "ingredientes": [
-          "Pollo en salsa de champiñon",
-          "Maíz",
-          "Aguacate",
-          "Papas Cabello de Ángel",
-          "Arroz Blanco"
+          "Arroz con cilantro",
+          "Ensalada de lechuga tomate cebolla  y vinagreta ",
+          "Pure de papa"
         ]
       }
     },
-    "d14052020": {
+    "d28072020": {
       "opcion1": {
-        "titulo": "Pollo en salsa de champiñon",
+        "titulo": "Pollo con champiñones ",
         "ingredientes": [
-          "Pollo en salsa de champiñon",
-          "Maíz",
-          "Aguacate",
-          "Papas Cabello de Ángel",
-          "Arroz Blanco"
+          "Arroz de vegetales ",
+          "Monedas de platano ",
+          "aguacate"
         ]
       },
       "opcion2": {
         "titulo": "Carne de res a la parrilla",
         "ingredientes": [
-          "Carne de Res",
-          "Maíz",
-          "Aguacate",
-          "Papas Cabello de Ángel",
-          "Arroz Blanco"
+          "Arroz de vegetales ",
+          "Monedas de platano ",
+          "aguacate"
         ]
       }
     },
-    "d10062020": {
+    "d29072020": {
       "opcion1": {
-        "titulo": "Carne en bistec",
+        "titulo": "Pollo en julianas ",
         "ingredientes": [
-          "Carne de Res en Bistec",
-          "Arvejas",
-          "Tomate",
-          "Zanahoria",
-          "Plátano maduro con bocadillo y queso",
-          "Arroz Blanco"
+          "Arroz blanco ",
+          "Habichuelas en crema de leche ",
+          "Papas fosforito ",
+          "Maíz y aguacate"
+
         ]
       },
       "opcion2": {
-        "titulo": "Pechuga gratinada",
+        "titulo": "Carne a la plancha ",
         "ingredientes": [
-          "Pechuga gratinada",
-          "Arvejas",
-          "Tomate",
-          "Zanahoria",
-          "Plátano maduro con bocadillo y queso",
-          "Arroz Blanco"
+          "Arroz blanco ",
+          "Habichuelas en crema de leche ",
+          "Papas fosforito ",
+          "Maíz y aguacate"
    
         ]
       }
     },
-    "d03062020": {
+    "d31072020": {
       "opcion1": {
-        "titulo": "Albondigas en salsa Campesina",
+        "titulo": "Pollo a la broaster",
         "ingredientes": [
-          "Albondigas en salsa Campesina",
-          "Pepino",
-          "Zucchini",
-          "Tomates Cherry",
-          "Arroz con cebolla caramelizada",
-          "Papas francesa"
+          "Arroz amarillo",
+          "Tomates cherry, maiz y  lechuga",
+          "Papas casco"
         ]
       },
       "opcion2": {
-        "titulo": "Pollo apanado",
+        "titulo": "Carne encebollada",
         "ingredientes": [
-          "Pollo apanado",
-          "Mayonesa de Aguacate",
-          "Pepino",
-          "Zucchini",
-          "Tomates Cherry",
-          "Arroz con cebolla caramelizada",
-          "Papas francesa"
+          "Arroz amarillo",
+          "Tomates cherry, maiz y  lechuga",
+          "Papas casco"
         ]
       }
     },
-    "d02062020": {
+    "d01082020": {
       "opcion1": {
         "titulo": "Julianas de Pollo",
         "ingredientes": [
